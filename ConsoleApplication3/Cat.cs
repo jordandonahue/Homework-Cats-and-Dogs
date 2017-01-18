@@ -6,17 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication3
 {
-    class Cat
+    class Cat : Animals
     {
-        public string color { get; set; }
 
-        public int age { get; set; }
-
-        public string name { get; set; }
-
-        public string gender { get; set; }
-        
-        public string breed { get; set; }
 
         
         
@@ -36,6 +28,10 @@ namespace ConsoleApplication3
             return "Meow, Purr. This Cat is a " + this.age + " year old " + this.gender + " " + this.color + " " + this.breed + " named " + this.name;
         }
         
+        public override string MakeNoise()
+        {
+            return "Meow";
+        }
     }
 
     
