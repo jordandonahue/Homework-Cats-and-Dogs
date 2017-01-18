@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication3
 {
-    class Dog : Animals
+    class Dog : Animals, IMammal
     {
 
 
@@ -25,7 +25,17 @@ namespace ConsoleApplication3
             return "Woof, Bork. This Dog is a " + this.age + " year old " + this.gender + " " + this.color + " " + this.breed + " named " + this.name;
         }
 
-        public override string MakeNoise()
+        public string GetName()
+        {
+            return this.name;
+        }
+
+        public void GiveLiveBirth()
+        {
+            Console.Write("Dog had Puppies!");
+        }
+
+        public string MakeNoise()
         {
             return "Woof!";
         }

@@ -18,13 +18,7 @@ namespace ConsoleApplication3
 
         public string breed { get; set; }
 
-        public virtual string MakeNoise()
-        {
-            return "Noise";
-
-        }
-
-
+       
     }
 
     

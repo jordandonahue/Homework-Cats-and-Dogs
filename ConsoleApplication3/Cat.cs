@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication3
 {
-    class Cat : Animals
+    class Cat : Animals, IMammal
     {
 
 
@@ -27,10 +27,20 @@ namespace ConsoleApplication3
         {
             return "Meow, Purr. This Cat is a " + this.age + " year old " + this.gender + " " + this.color + " " + this.breed + " named " + this.name;
         }
-        
-        public override string MakeNoise()
+
+        public string GetName()
         {
-            return "Meow";
+            return this.name;
+        }
+
+        public void GiveLiveBirth()
+        {
+            Console.Write("Cat had Kittens!");
+        }
+
+        public string MakeNoise()
+        {
+            return "Meow!";
         }
     }
 
